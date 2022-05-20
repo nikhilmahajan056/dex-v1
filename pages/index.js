@@ -6,15 +6,16 @@ const Home = () => {
 
   return (
     <Layout>
-      <h1>Passport.js Example</h1>
+      <h1>Sample Wallet</h1>
 
       <p>Steps to test the example:</p>
 
       <ol>
-        <li>Click Login and enter a username and password.</li>
+        <li>Click Login and enter a mobile number.</li>
+        <li>Now click on send OTP to receive the OTP (One-Time-Password) on the above mobile number.</li>
+        <li>Now enter the OTP and click on Login.</li>
         <li>
-          You'll be redirected to Home. Click on Profile, notice how your
-          session is being used through a token stored in a cookie.
+          After successful OTP verification, you'll be redirected to Home. Click on Profile, to see the wallet credentials.
         </li>
         <li>
           Click Logout and try to go to Profile again. You'll get redirected to
@@ -22,12 +23,12 @@ const Home = () => {
         </li>
       </ol>
 
-      {user && (
+      {/* {user && (
         <>
           <p>Currently logged in as:</p>
           <pre>{JSON.stringify(user, null, 2)}</pre>
         </>
-      )}
+      )} */}
 
       <style jsx>{`
         li {

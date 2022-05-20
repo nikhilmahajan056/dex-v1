@@ -19,10 +19,10 @@ const Signup = () => {
       password: e.currentTarget.password.value,
     }
 
-    if (body.password !== e.currentTarget.rpassword.value) {
-      setErrorMsg(`The passwords don't match`)
-      return
-    }
+    // if (body.password !== e.currentTarget.rpassword.value) {
+    //   setErrorMsg(`The passwords don't match`)
+    //   return
+    // }
 
     try {
       const res = await fetch('/api/signup', {
